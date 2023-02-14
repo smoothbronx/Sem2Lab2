@@ -13,8 +13,8 @@ public class LongLong
 
     public LongLong(long number)
     {
-        JuniorPart = (ulong)number >> 32;
-        SeniorPart = number & 0xFFFFFFFF;
+        JuniorPart = (ulong)number & 0xFFFFFFFF;
+        SeniorPart = number >> 32;
     }
 
     public void Display()
